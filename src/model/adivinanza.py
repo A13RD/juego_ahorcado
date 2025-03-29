@@ -5,6 +5,23 @@ class Adivinanza:
         Attributes:
             __letras (list[str]): Lista de caracteres que conforman la palabra a adivinar.
             __posiciones (list[bool]): Lista de booleanos que indican si cada letra ha sido adivinada.
+        
+        Methods:
+        
+        adivinar(letra: str) -> list[int]:
+            Intenta adivinar una letra en la palabra. Retorna una lista con las posiciones en las que aparece la letra. Si la letra no está en la palabra, retorna una lista vacía.
+
+        obtener_letras() -> list[str]:
+            Devuelve la lista de caracteres que conforman la palabra.
+
+        obtener_posiciones() -> list[bool]:
+            Retorna una lista de booleanos indicando qué letras han sido adivinadas.
+
+        obtener_cantidad_posiciones() -> int:
+            Devuelve la cantidad de caracteres en la palabra.
+
+        verificar_si_hay_triunfo() -> bool:
+            Retorna True si todas las letras han sido adivinadas, False en caso contrario.
     """
 
     def __init__(self, palabra: str):
