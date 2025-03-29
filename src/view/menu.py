@@ -10,6 +10,31 @@ class Menu:
 
     Attributes:
         juego (Juego): Instancia del juego que gestiona la lógica de la partida.
+
+    Methods:
+        iniciar():
+            Inicia el menú principal del juego, permitiendo al usuario seleccionar opciones.
+
+    Private Methods:
+        __mostrar_opciones():
+            Muestra en pantalla las opciones disponibles en el menú principal.
+
+        __pedir_letra() -> list[int]:
+            Solicita al usuario que ingrese una letra y la envía al juego para su evaluación.
+            Retorna una lista con las posiciones en las que aparece la letra.
+
+        __modificar_configuracion():
+            Permite al usuario modificar la dificultad del juego seleccionando entre tres niveles.
+
+        __controlar_opcion_1():
+            Inicia una nueva partida y controla el flujo de juego hasta que el usuario gane o pierda.
+
+        __mostrar_adivinanza():
+            Muestra el estado actual de la palabra oculta con las letras adivinadas y los espacios por completar.
+
+        __mostrar_resultado_jugada(resultado_adivinanza: list[int]):
+            Muestra un mensaje al usuario indicando si ha acertado o no en su intento de adivinanza.
+
     """
 
     def __init__(self, juego: Juego):
