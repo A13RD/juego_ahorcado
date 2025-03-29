@@ -6,6 +6,16 @@ class Diccionario:
     def __init__(self):
         """
             Inicializa una instancia de la clase Diccionario, cargando las palabras desde un archivo.
+
+            Attributes:
+                palabras (list[str]): Lista de palabras cargadas desde el archivo.
+
+            Methods:
+                __cargar_palabras() -> list[str]:
+                    Carga las palabras desde el archivo "assets/palabras.txt" y las devuelve en una lista.
+
+                obtener_palabra() -> str:
+                    Selecciona y retorna una palabra aleatoria de la lista de palabras disponibles.
         """
         self.palabras: list[str] = self.__cargar_palabras()
 
